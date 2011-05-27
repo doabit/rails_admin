@@ -41,14 +41,17 @@ en:
       chose_all: "Choose all"
       clear_all: "Clear all"
       up: "Up"
-      down: "Down"
+      down: "Down" 
+      add_new: "Add new "
       save: "Save"
       save_and_add_another: "Save and add another"
       save_and_edit: "Save and edit"
       cancel: "Cancel"
     delete:
+      title: "Delete confirmation "
       flash_confirmation: "%{name} was successfully destroyed"
       confirmation: "Yes, I'm sure"
+      notice: "Are you sure you want to delete the following object along with all of the following related items will be deleted:"
     flash:
       successful: "%{name} was successfully %{action}"
       error: "%{name} failed to be %{action}"

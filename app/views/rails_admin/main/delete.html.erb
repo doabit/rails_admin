@@ -1,11 +1,14 @@
 <% head_javascript "rails_admin/application.js" %>
       <div class="ra-block">
         <div class="ui-widget-header">
-          Delete confirmation
+          <!-- Delete confirmation    -->      
+          <%= t("admin.delete.title") %> 
         </div>
         <div class="ra-block-content">
 <%= render(:partial => 'layouts/rails_admin/flash', :locals => {:flash => flash}) -%>
-          <p>Are you sure you want to delete the <%= @abstract_model.pretty_name.downcase %> &ldquo;<strong><%= @model_config.with(:object => @object).object_label %></strong>&rdquo;? All of the following related items will be deleted:</p>
+          <p><!-- Are you sure you want to delete the <%= @abstract_model.pretty_name.downcase %> &ldquo;<strong><%= @model_config.with(:object => @object).object_label %></strong>&rdquo;? All of the following related items will be deleted: -->
+            <%= t("admin.delete.notice") %><
+            </p>
           <%= render :partial => "delete_notice", :object => @object %>
           <%= form_for(@object, :url => rails_admin_destroy_path(:model_name => @abstract_model.to_param, :id => @object.id), :html => {:method => "delete"}) do %>
             <ul class="submit clearfix">

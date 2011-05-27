@@ -4,7 +4,7 @@ zh_cn:
   admin:
     dashboard:
       pagename: "网站管理"
-      name: "Dashboard"
+      name: "面板"
       model_name: "模型名称"
       last_used: "最后使用"
       records: "记录"
@@ -38,6 +38,7 @@ zh_cn:
       chose_all: "选择全部"
       clear_all: "取消全部"
       save: "保存"
+      add_new: "添加新的"
       save_and_add_another: "保存并添加新的"
       save_and_edit: "保存并再编辑"
       cancel: "取消"
@@ -45,9 +46,11 @@ zh_cn:
       down: "下移"
     edit:
       add_new_associated_model_name: "添加新的%{name}"
-    delete:
+    delete: 
+      title: "删除住处"
       flash_confirmation: "%{name}被成功删除"
       confirmation: "是的，我确定"
+      notice: "你确定要删除随着将被删除下列相关项目，所有的下列对象："
     flash:
       successful: "%{name} {action}成功"
       error: "%{name} %{action}失败"

@@ -35,7 +35,7 @@ module RailsAdmin
           messages << "Removed #{key.to_s.capitalize} #{removed_ids.join(', ')} associations"
         end
         if added_ids.any?
-          messages << "Added #{key.to_s.capitalize} #{added_ids.join(', ')} associations"
+          messages << "#{t("admin.actions.created")} #{key.to_s.capitalize} #{added_ids.join(', ')} associations"
         end
       end
 
@@ -44,7 +44,7 @@ module RailsAdmin
       end
 
       if not changed_property_list.empty?
-        messages << "Changed #{changed_property_list.join(", ")}"
+        messages << "#{t("admin.actions.updated")} #{changed_property_list.join(", ")}"
       end
 
       create_history_item(messages, object, model, user) unless messages.empty?
