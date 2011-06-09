@@ -10,7 +10,7 @@ zh_cn:
       unauthenticated: '你需要登录或注册后才能继续'
       unconfirmed: '你需要验证账户后才能继续'
       locked: '你的账户已经被锁定'
-      invalid: '邮箱或地址无效'
+      invalid: '邮箱或密码无效'
       invalid_token: '身份验证令牌无效'
       timeout: '你的会话已过期，请重新登陆后继续'
       inactive: '你的账户还没有激活'
